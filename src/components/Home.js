@@ -30,7 +30,9 @@ export default class Home extends Component {
 			<div className="container">
 				<div className="row">
 					<h1 className="title text-center">Camper Leaderboard</h1>
-					<Table dataCampers={this.state.dataCampers} />
+					<Table
+						dataCampers={this.state.dataCampers}
+					/>
 					<p className="copyright">Lutfian Dwi Cahyono</p>
 				</div>
 			</div>
