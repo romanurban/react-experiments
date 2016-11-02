@@ -23,7 +23,7 @@ export default class Table extends Component {
   			noDataText: (<Spinner spinnerName="three-bounce" noFadeIn={true} />),
   			afterSearch: function (search, result) {
   				if (!result.length) {
-  					this.noDataText = (<p>Search not found</p>)
+  					this.noDataText = (<p className="search-not-found">Search not found</p>)
   				}
   			}
 		};
@@ -44,21 +44,21 @@ export default class Table extends Component {
 					</TableHeaderColumn>
 					<TableHeaderColumn
 						dataFormat={this.getProfileLink}
-						columnClassName="tdCustomStyle"
+						columnClassName="td-custom"
 						dataField="username"
 						isKey={true}
 						dataSort={true}>
 							Username
 					</TableHeaderColumn>
 					<TableHeaderColumn
-						columnClassName="tdCustomStyle"
+						columnClassName="td-custom"
 						dataField="recent"
 						dataAlign="center"
 						dataSort={true}>
 							Recent Points
 					</TableHeaderColumn>
 					<TableHeaderColumn
-						columnClassName="tdCustomStyle"
+						columnClassName="td-custom"
 						dataField="alltime"
 						dataAlign="center"
 						dataSort={true}>

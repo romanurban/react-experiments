@@ -1,3 +1,6 @@
-.tdCustomStyle {
+.td-custom {
 	vertical-align: middle !important;
+}
+.search-not-found {
+	margin-top: 10px;
 }
