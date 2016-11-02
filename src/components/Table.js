@@ -20,7 +20,12 @@ export default class Table extends Component {
 
 	render() {
 		const options = {
-  			noDataText: (<Spinner spinnerName="three-bounce" noFadeIn={true} />)
+  			noDataText: (<Spinner spinnerName="three-bounce" noFadeIn={true} />),
+  			afterSearch: function (search, result) {
+  				if (!result.length) {
+  					this.noDataText = (<p>Search not found</p>)
+  				}
+  			}
 		};
 		return (
 			<BootstrapTable
