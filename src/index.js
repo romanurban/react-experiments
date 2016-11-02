@@ -5,4 +5,4 @@ import Home from './components/Home';
 render(
 	<Home />,
 	document.getElementById('container')
-	);
+);
