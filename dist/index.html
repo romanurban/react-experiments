@@ -2,9 +2,72 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Camper Leaderboard</title>
+	<title>Leaderboard</title>
+
+<style>
+html { 
+  background: url(./dist/main-bg-compressor.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+table {
+  background-color: #fff !important;
+}
+body {
+  background-color: transparent !important;
+}
+.cloud{
+  position: fixed;
+  bottom:40px;
+  left:20px;
+}
+.cloud.fliped img{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.cloud.pos1{
+  right:5px;
+  left:auto;
+  bottom: 70px;
+}
+.cloud.pos1 img{
+  width:100px;
+}
+.cloud.pos2{
+  top: 0px;
+  right:30px;
+  left:auto;
+}
+.cloud.pos2 img{
+  width:150px;
+}
+.cloud.pos3{
+  top: -10px;
+  left:-10px;
+  width: 60px;
+}
+</style>
+<link rel="stylesheet" src="https://raw.githubusercontent.com/romanurban/coming-soon/master/assets/css/animations.css" />
 </head>
 <body>
+    <div class="cloud floating">
+       <img src="./dist/cloud.png">
+    </div>
+    <div class="cloud pos1 fliped floating">
+       <img src="./dist/cloud.png">
+    </div>
+    <div class="cloud pos2 floating">
+       <img src="./dist/cloud.png">
+    </div>
+    <div class="cloud pos3 fliped floating">
+       <img src="./dist/cloud.png">
+    </div>
 	<div id="container"></div>
 <script type="text/javascript" src="index_bundle.js"></script></body>
 </html>

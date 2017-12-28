@@ -15,7 +15,7 @@ export default class Table extends Component {
 	}
 
 	getProfileLink(cell) {
-		return `<a target="_blank" href="http://www.freecodecamp.com/${cell}">${cell}</a>`;
+		return `<a target="_blank" href="src/profiles/${cell}.html">${cell}</a>`;
 	}
 
 	render() {
@@ -34,7 +34,7 @@ export default class Table extends Component {
 				hover={true}
 				search={true}
 				options={options}
-				height="750">
+				height="690">
 					<TableHeaderColumn
 						dataFormat={this.getImage}
 						dataField="img"
@@ -46,23 +46,101 @@ export default class Table extends Component {
 						dataFormat={this.getProfileLink}
 						columnClassName="td-custom"
 						dataField="username"
+						width="100"
 						isKey={true}
 						dataSort={true}>
-							Username
+							Student
 					</TableHeaderColumn>
 					<TableHeaderColumn
 						columnClassName="td-custom"
-						dataField="recent"
+						dataField="date1"
 						dataAlign="center"
 						dataSort={true}>
-							Recent Points
+							06.11
 					</TableHeaderColumn>
 					<TableHeaderColumn
 						columnClassName="td-custom"
-						dataField="alltime"
+						dataField="date2"
 						dataAlign="center"
 						dataSort={true}>
-							All Time Points
+							07.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date3"
+						dataAlign="center"
+						dataSort={true}>
+							09.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date4"
+						dataAlign="center"
+						dataSort={true}>
+							13.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date5"
+						dataAlign="center"
+						dataSort={true}>
+							14.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date6"
+						dataAlign="center"
+						dataSort={true}>
+							16.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date7"
+						dataAlign="center"
+						dataSort={true}>
+							21.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date8"
+						dataAlign="center"
+						dataSort={true}>
+							23.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date9"
+						dataAlign="center"
+						dataSort={true}>
+							27.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date10"
+						dataAlign="center"
+						dataSort={true}>
+							28.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date11"
+						dataAlign="center"
+						dataSort={true}>
+							30.11
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="date12"
+						dataAlign="center"
+						dataSort={true}>
+							04.12
+					</TableHeaderColumn>
+					<TableHeaderColumn
+						columnClassName="td-custom"
+						dataField="total"
+						dataAlign="center"
+						dataSort={true}>
+							Total
 					</TableHeaderColumn>
 			</BootstrapTable>
 		);

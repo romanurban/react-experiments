@@ -13,7 +13,7 @@ module.exports = {
 	],
 	output: {
 		path: __dirname + '/dist',
-		filename: 'index_bundle.js'
+		filename: 'index_bundle.js',
 	},
 	module: {
 		loaders: [
@@ -27,7 +27,7 @@ module.exports = {
 		        loader: "style-loader!css-loader" 
 		    },
 		    { 
-		        test: /\.png$/, 
+		        test: /\.png$/,
 		        loader: "url-loader?limit=100000" 
 		    },
 		    { 

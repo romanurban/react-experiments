@@ -17,7 +17,7 @@ export default class Home extends Component {
 
   	componentDidMount() {
 	    axios
-		    .get(`https://fcctop100.herokuapp.com/api/fccusers/top/alltime`)
+		    .get(`https://api.myjson.com/bins/v7ckb`)
 	    	.then(res => {
 		        const dataCampers = res.data.map(obj => obj);
 		        this.setState({ dataCampers });
@@ -29,11 +29,10 @@ export default class Home extends Component {
 		return (
 			<div className="container">
 				<div className="row">
-					<h1 className="title text-center">Camper Leaderboard</h1>
+					<h1 className="title text-center">4th Grade Leaderboard</h1>
 					<Table
 						dataCampers={this.state.dataCampers}
 					/>
-					<p className="copyright">Lutfian Dwi Cahyono</p>
 				</div>
 			</div>
 		);
